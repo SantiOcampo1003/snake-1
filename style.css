@@ -1,0 +1,16 @@
+.box {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box div {
+  width: 40px;
+  height: 40px;
+}
+
+.box div.snake {
+  background-color: blue;
+}
