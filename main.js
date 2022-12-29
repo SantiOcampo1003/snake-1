@@ -6,11 +6,13 @@ const downButton = document.getElementById('down-button');
 const upButton = document.getElementById('up-button');
 const leftButton = document.getElementById('left-button');
 const rightButton = document.getElementById('right-button');
+const score = document.getElementById('score');
 const interval = 500;
 let accumulator = 1;
 let divs;
 let idInterval;
 let foodIndex;
+let scoreCount = 0;
 
 playButton.addEventListener('click', () => {
   startGame();
@@ -62,12 +64,12 @@ function eatFood(tail) {
     divs[foodIndex].classList.remove('food');
     snake.unshift(tail);
     divs[tail].classList.add('snake');
+    score.innerText = ++scoreCount;
     randomFood();
   }
 }
 
 function isCollision(index) {
-  console.log(index % size);
   if (
     index >= size * size
     || index < 0
@@ -90,6 +92,8 @@ function clearGame() {
   snake = [0, 1, 2];
   box.innerHTML = '';
   accumulator = 1;
+  scoreCount = 0;
+  score.innerText = scoreCount;
   clearInterval(idInterval);
   createBox();
   drawSnake();
