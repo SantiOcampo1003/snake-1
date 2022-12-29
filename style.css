@@ -14,3 +14,10 @@
 .box div.snake {
   background-color: blue;
 }
+.box div.food {
+  width: 38px;
+  height: 38px;
+  background-color: yellow;
+  border-radius: 40px;
+  border: 1px dashed black;
+}
