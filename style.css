@@ -36,5 +36,5 @@ h1 , p{
   height: 38px;
   background-color: rgb(90, 17, 17);
   border-radius: 40px;
-  border: 1px dashed black;
+  border: 1px dashed rgb(241, 234, 234);
 }
