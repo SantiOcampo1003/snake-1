@@ -1,23 +1,40 @@
+body{
+  background-image: url(/pexels-coppertist-wu-15466178.jpg);
+  background-size: contain;
+}
+
+h1 , p{
+  color: aliceblue;
+}
+
+
 .box {
   width: 400px;
   height: 400px;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin-left: 550px;
 }
 
 .box div {
   width: 40px;
   height: 40px;
+  align-items: center;
+}
+#play-button{
+  margin-left: 635px;
+
 }
 
 .box div.snake {
-  background-color: blue;
+  background-color: rgb(90, 17, 17);
 }
 .box div.food {
   width: 38px;
   height: 38px;
-  background-color: yellow;
+  background-color: rgb(90, 17, 17);
   border-radius: 40px;
   border: 1px dashed black;
 }

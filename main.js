@@ -100,6 +100,7 @@ function clearGame() {
   randomFood();
 }
 
+
 function up() {
   accumulator = -size;
 }
